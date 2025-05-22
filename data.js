@@ -1,7 +1,7 @@
 const mangas = [
     {
         titulo: "Ponkotsu Ponko [79/79] [Manga] PDF – (Mf)",
-        portada: "https://www.lexmangas.com/wp-content/uploads/2025/04/5cbbc08fafb0d_11zon.webp",
+        portada: "/img/ponkotsu_ponko.webp",
         sinopsis: "En un futuro no muy lejano, en una tranquila ciudad costera. Yoshioka, que había perdido recientemente a su esposa, sólo quiere pasar el resto de sus días en paz. Sin embargo, los hijos de Yoshioka, preocupados por la salud de su padre, envian un robot de limpieza para ayudarlo. La tranquila vida de Yoshioka está cambiando. ",
         alternative: "Useless Ponko",
         estado: "Finalizado",
