@@ -7,10 +7,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Navegación con logo centrado -->
+    <nav>
+        <img src="img/logo.png" alt="Logo">
+    </nav>
+
+    <!-- Buscador con filtro y sugerencias -->
+    <header>
+        <input type="text" id="searchInput" placeholder="Buscar...">
+        <div id="suggestionBox" class="suggestion-box"></div> 
+        <select id="filterSelect">
+            <option value="titulo">Título</option>
+            <option value="banda">Banda</option>
+            <option value="discografica">Discográfica</option>
+            <option value="pais">País</option>
+        </select>
+    </header>
+
+    <!-- Contenedor de mangas -->
     <div class="container">
-        <h1>Lista de Mangas</h1>
         <div id="mangas-list"></div>
     </div>
+
     <script type="module" src="script.js"></script>
+
 </body>
 </html>
