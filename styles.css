@@ -98,16 +98,16 @@ img {
     margin: 20px auto;
     border-radius: 5px;
 }
-.manga-miembros,
-.manga-canciones {
+.archivo-miembros,
+.archivo-canciones {
     list-style: none;
     padding: 0;
     text-align: center;
     margin: 1px;
 }
 
-.manga-miembros li,
-.manga-canciones li {
+.archivo-miembros li,
+.archivo-canciones li {
     color: #780000;
     font-style: italic;
     margin: 1px;
