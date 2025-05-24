@@ -1,4 +1,4 @@
-import mangas from './data.js';
+import archivos from './data.js';
 
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.querySelector(".container");
@@ -6,60 +6,57 @@ document.addEventListener("DOMContentLoaded", () => {
     const filterSelect = document.getElementById("filterSelect");
     const suggestionBox = document.getElementById("suggestionBox");
 
-    // Ordenar los mangas de más nuevo a más viejo
-    mangas.sort((a, b) => b.lanzamiento - a.lanzamiento);
+    archivos.sort((a, b) => b.lanzamiento - a.lanzamiento);
 
-    function displayMangas(filteredMangas) {
+    function displayArchivos(filteredArchivos) {
         container.innerHTML = ""; // Limpiar contenido previo
-        filteredMangas.forEach(manga => {
-            const mangaDiv = document.createElement("div");
-            mangaDiv.classList.add("manga-box");
+        filteredArchivos.forEach(archivo => {
+            const archivoDiv = document.createElement("div");
+            archivoDiv.classList.add("archivo-box");
 
-            mangaDiv.innerHTML = `
-                <h1><strong>${manga.titulo}</strong></h1>
-                <h2><strong>${manga.banda}</strong></h2>
-                <img src="${manga.portada}" alt="Portada">
+            archivoDiv.innerHTML = `
+                <h1><strong>${archivo.titulo}</strong></h1>
+                <h2><strong>${archivo.banda}</strong></h2>
+                <img src="${archivo.portada}" alt="Portada">
                 <p><strong>Género:</strong></p>
-                <p><em>${manga.genero}</em></p>
+                <p><em>${archivo.genero}</em></p>
                 <p><strong>País:</strong></p>
-                <p><em>${manga.pais}</em></p>
+                <p><em>${archivo.pais}</em></p>
                 <p><strong>Tipo:</strong></p>
-                <p><em>${manga.tipo}</em></p>
+                <p><em>${archivo.tipo}</em></p>
                 
                 <p><strong>Formato:</strong></p>
-                <p><em>${manga.formato}</em></p>
+                <p><em>${archivo.formato}</em></p>
                 
                 <p><strong>Lanzamiento:</strong></p>
-                <p><em>${manga.lanzamiento}</em></p>
+                <p><em>${archivo.lanzamiento}</em></p>
                 <p><strong>Discográfica:</strong></p>
-                <p><em>${manga.discografica}</em></p>
+                <p><em>${archivo.discografica}</em></p>
                 <p><strong>Miembros:</strong></p>
-                <ul class="manga-miembros">
-                    ${manga.miembros.map(miembro => `<li><em>${miembro}</em></li>`).join("")}
+                <ul class="archivo-miembros">
+                    ${archivo.miembros.map(miembro => `<li><em>${miembro}</em></li>`).join("")}
                 </ul>
                 <p><strong>Lista de canciones:</strong></p>
-                <ul class="manga-canciones">
-                    ${manga.canciones.map(cancion => `<li><em>${cancion}</em></li>`).join("")}
+                <ul class="archivo-canciones">
+                    ${archivo.canciones.map(cancion => `<li><em>${cancion}</em></li>`).join("")}
                 </ul>
             `;
 
-            container.appendChild(mangaDiv);
+            container.appendChild(archivoDiv);
         });
     }
 
-    // Mostrar todos los mangas al inicio
-    displayMangas(mangas);
+    displayArchivos(archivos);
 
-    // Implementar sugerencias dinámicas en la búsqueda
     searchInput.addEventListener("input", () => {
         const filterKey = filterSelect.value;
         const searchTerm = searchInput.value.toLowerCase();
 
         if (searchTerm.length > 1) {
-            const suggestions = [...new Set(mangas
-                .map(manga => manga[filterKey])
+            const suggestions = [...new Set(archivos
+                .map(archivo => archivo[filterKey])
                 .filter(value => value.toLowerCase().includes(searchTerm))
-            )].slice(0, 5); // Evitar duplicados y mostrar las primeras 5 sugerencias
+            )].slice(0, 5);
 
             suggestionBox.innerHTML = suggestions.map(suggestion => `<p>${suggestion}</p>`).join("");
             suggestionBox.style.display = suggestions.length ? "block" : "none";
@@ -85,10 +82,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const filterKey = filterSelect.value;
         const searchTerm = searchInput.value.toLowerCase();
 
-        const filteredMangas = mangas.filter(manga =>
-            manga[filterKey].toLowerCase().includes(searchTerm)
+        const filteredArchivos = archivos.filter(archivo =>
+            archivo[filterKey].toLowerCase().includes(searchTerm)
         );
 
-        displayMangas(filteredMangas);
+        displayArchivos(filteredArchivos);
     });
 });
