@@ -16,16 +16,19 @@ document.addEventListener("DOMContentLoaded", () => {
             mangaDiv.classList.add("manga-box");
 
             mangaDiv.innerHTML = `
-                <h2><strong>${manga.titulo}</strong></h2>
-                <h3><strong>${manga.banda}</strong></h3>
+                <h1><strong>${manga.titulo}</strong></h1>
+                <h2><strong>${manga.banda}</strong></h2>
                 <img src="${manga.portada}" alt="Portada">
-                <h4><strong>Datos</strong></h4>
                 <p><strong>Género:</strong></p>
                 <p><em>${manga.genero}</em></p>
                 <p><strong>País:</strong></p>
                 <p><em>${manga.pais}</em></p>
                 <p><strong>Tipo:</strong></p>
                 <p><em>${manga.tipo}</em></p>
+                
+                <p><strong>Formato:</strong></p>
+                <p><em>${manga.formato}</em></p>
+                
                 <p><strong>Lanzamiento:</strong></p>
                 <p><em>${manga.lanzamiento}</em></p>
                 <p><strong>Discográfica:</strong></p>
