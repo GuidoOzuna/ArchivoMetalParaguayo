@@ -68,7 +68,7 @@ header {
 }
 
 .suggestion-box p:hover {
-    background-color: #780000;
+    background-color: #ffffff;
 }
 .container {
     max-width: 600px;
@@ -82,7 +82,7 @@ header {
 h1, h2, h3, h4{
     text-align: center;
     color: #ffffff;
-    margin: 10px;
+    margin: 1px;
 }
 p {
   text-align: center;
