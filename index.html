@@ -16,7 +16,6 @@
     <!-- Buscador con filtro y sugerencias -->
     <header>
         <input type="text" id="searchInput" placeholder="Buscar...">
-        <div id="suggestionBox" class="suggestion-box"></div> 
         <select id="filterSelect">
             <option value="titulo">Álbum</option>
             <option value="banda">Banda</option>
@@ -24,9 +23,10 @@
             <option value="genero">Género</option>
             <option value="pais">País</option>
         </select>
+        <div id="suggestionBox" class="suggestion-box"></div>
     </header>
 
-    <!-- Contenedor de mangas -->
+    <!-- Contenedor de archivos -->
     <div class="container">
         <div id="archivos-list"></div>
     </div>
