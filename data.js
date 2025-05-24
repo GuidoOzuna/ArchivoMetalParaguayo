@@ -1,4 +1,4 @@
-const mangas = [
+const archivos = [
     {
         titulo: "Sendero al olvido",
         portada: "img/sendero_al_olvido.jpg",
@@ -215,4 +215,4 @@ const mangas = [
     },
 ];
 
-export default mangas;
+export default archivos;
