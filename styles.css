@@ -85,9 +85,9 @@ header {
 
 /* Contenedor principal */
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Estilos para los archivos */
@@ -138,7 +138,31 @@ header {
     font-style: italic;
     margin: 3px 0;
 }
+/* Redes sociales */
+.archivo-redes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
 
+.archivo-redes li {
+    background-color: #780000;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.archivo-redes li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.archivo-redes li:hover {
+    background-color: #ff0000;
+}
 /* Responsive */
 @media (max-width: 600px) {
     #searchInput,

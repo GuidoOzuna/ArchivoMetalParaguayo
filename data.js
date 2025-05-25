@@ -20,7 +20,10 @@ const archivos = [
             "01- Sendero al olvido",
             "02- Donde se encuentren las almas",
             "03- Trono de fuego"
-        ]
+        ],
+        redes: [
+            { platform: "Bandcamp", url: "https://anhellical.bandcamp.com" }
+          ]
     },
     {
         titulo: "Abya Yalá",
@@ -48,7 +51,11 @@ const archivos = [
             "06- Tiempo",
             "07- Fluye como el agua",
             "08- Abya Yalá"
-        ]
+        ],
+        redes: [
+            { platform: "Bandcamp", url:
+            "https://urupe.bandcamp.com" }
+            ]
     },
     {
         titulo: "Abya Yalá",
@@ -78,7 +85,11 @@ const archivos = [
             "06- Tiempo",
             "07- Fluye como el agua",
             "08- Abya Yalá"
-        ]
+        ],
+        redes: [
+            { platform: "Bandcamp", url:
+            "https://urupe.bandcamp.com/album/abya-yal" }
+          ]
     },
     {
         titulo: "Ñorairo Guasu",
@@ -101,7 +112,10 @@ const archivos = [
             "02- Ñorairo Guasu",
             "03- Destinados a ir al Abismo conscientemente",
             "04- Unknown"
-        ]
+        ],
+        redes: [
+            { platform: "N/A", url: "N/A" }
+          ]
     },
     {
         titulo: "Promo 2015",
@@ -124,7 +138,10 @@ const archivos = [
             "02- Ñorairo Guasu",
             "03- Depredando la vida",
             "04- Destinado a ir al abismo"
-        ]
+        ],
+        redes: [
+            { platform: "N/A", url: "N/A" }
+          ]
     },
     {
         titulo: "Promo 2015",
@@ -147,7 +164,10 @@ const archivos = [
             "02- Ñorairo Guasu",
             "03- Depredando la vida",
             "04- Destinado a ir al abismo"
-        ]
+        ],
+        redes: [
+            { platform: "N/A", url: "N/A" }
+          ]
     },
     {
         titulo: "Promo 2015",
@@ -170,9 +190,12 @@ const archivos = [
             "02- Ñorairo Guasu",
             "03- Depredando la vida",
             "04- Destinado a ir al abismo"
-        ]
+        ],
+        redes: [
+            { platform: "N/A", url: "N/A" }
+          ]
     },
-    {
+     {
         titulo: "Black Rites of Hell",
         portada: "img/black_rites_of_hell_casete.jpg",
         banda: "Taú / Bestial Devastator / Mortiferis",
@@ -211,7 +234,11 @@ const archivos = [
             "7-	Depredando la vida",
             "8-	Ñorairo Guasu",
             "9-	The Return of Darkness and Evil (Bathory cover"
-        ]
+        ],
+        redes: [
+            { platform: "Bandcamp", url:
+            "https://dosp.bandcamp.com/album/black-rites-of-hell" }
+          ]
     },
 ];
 
