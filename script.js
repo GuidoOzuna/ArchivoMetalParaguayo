@@ -1,36 +1,36 @@
 import archivos from './data.js';
 
 document.addEventListener("DOMContentLoaded", () => {
-    const container = document.querySelector(".container"); // Contenedor principal
-    const archivosList = document.getElementById("archivos-list"); // Listado de archivos
-    const searchInput = document.getElementById("searchInput"); // Campo de búsqueda
-    const filterSelect = document.getElementById("filterSelect"); // Selector de filtros
-    const suggestionBox = document.getElementById("suggestionBox"); // Caja de sugerencias
+    const container = document.querySelector(".container");
+    const archivosList = document.getElementById("archivos-list");
+    const searchInput = document.getElementById("searchInput");
+    const filterSelect = document.getElementById("filterSelect");
+    const suggestionBox = document.getElementById("suggestionBox");
 
-    // Ocultar la lista al inicio
     container.style.display = "none";
 
-    // Ordenar archivos por año de lanzamiento (descendente)
     archivos.sort((a, b) => b.lanzamiento - a.lanzamiento);
 
-    // Función para mostrar los archivos en pantalla
     function displayArchivos(filteredArchivos) {
-        archivosList.innerHTML = ""; // Limpiar contenido previo
-        filteredArchivos.forEach(archivo => {
+        archivosList.innerHTML = "";
+
+        filteredArchivos.forEach((archivo, index) => {
             const archivoDiv = document.createElement("div");
             archivoDiv.classList.add("archivo-box");
+            archivoDiv.setAttribute("data-aos", "fade-up");
+            archivoDiv.setAttribute("data-aos-delay", `${index * 800}`);
 
             archivoDiv.innerHTML = `
                 <h1><strong>${archivo.titulo}</strong></h1>
                 <h2><strong>${archivo.banda}</strong></h2>
-                <img src="${archivo.portada}" alt="Portada" loading="lazy">
+                <img src="${archivo.portada}" alt="Portada" class="archivo-img" loading="lazy">
                 <p><strong>Género:</strong> <em>${archivo.genero}</em></p>
                 <p><strong>País:</strong> <em>${archivo.pais}</em></p>
                 <p><strong>Tipo:</strong> <em>${archivo.tipo}</em></p>
                 <p><strong>Formato:</strong> <em>${archivo.formato}</em></p>
                 <p><strong>Lanzamiento:</strong> <em>${archivo.lanzamiento}</em></p>
                 <p><strong>Discográfica:</strong> <em>${archivo.discografica}</em></p>
-                <p><strong>Miembros:</strong></p>
+                <p><strong>Miembros</strong></p>
                 <ul class="archivo-miembros">
                     ${archivo.miembros.map(miembro => `<li><em>${miembro}</em></li>`).join("")}
                 </ul>
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <ul class="archivo-canciones">
                     ${archivo.canciones.map(cancion => `<li><em>${cancion}</em></li>`).join("")}
                 </ul>
-                <p><strong>Media:</strong></p>
+                <p><strong>BandCamp</strong></p>
                 <ul class="archivo-redes">
                     ${archivo.redes.length > 0 
                         ? archivo.redes.map(red => red.platform === "N/A" || red.url === "N/A" 
@@ -51,17 +51,39 @@ document.addEventListener("DOMContentLoaded", () => {
 
             archivosList.appendChild(archivoDiv);
         });
+
+        AOS.refresh(); // Refresca AOS después de inyectar contenido
+
+        // Anime.js para imágenes
+        document.querySelectorAll(".archivo-img").forEach(img => {
+            img.addEventListener("mouseenter", () => {
+                anime({
+                    targets: img,
+                    scale: 1.05,
+                    duration: 500,
+                    easing: "easeInOutQuad"
+                });
+            });
+
+            img.addEventListener("mouseleave", () => {
+                anime({
+                    targets: img,
+                    scale: 1,
+                    duration: 500,
+                    easing: "easeInOutQuad"
+                });
+            });
+        });
     }
 
-    // Manejo de búsqueda con sugerencias y filtrado dinámico
     searchInput.addEventListener("input", () => {
         const filterKey = filterSelect.value;
         const searchTerm = searchInput.value.trim().toLowerCase();
 
         if (searchTerm.length > 0) {
-            container.style.display = "flex"; // Mostrar la lista de archivos
+            container.style.display = "flex";
         } else {
-            container.style.display = "none"; // Ocultar la lista si el campo está vacío
+            container.style.display = "none";
         }
 
         if (searchTerm.length > 1) {
@@ -70,13 +92,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 .filter(value => value.toLowerCase().includes(searchTerm))
             )].slice(0, 5);
 
-            suggestionBox.innerHTML = suggestions.map(suggestion => `<p>${suggestion}</p>`).join("");
+            suggestionBox.innerHTML = suggestions.map(s => `<p>${s}</p>`).join("");
             suggestionBox.style.display = suggestions.length ? "block" : "none";
         } else {
             suggestionBox.style.display = "none";
         }
 
-        // Filtrado de búsqueda en la lista de archivos
         const filteredArchivos = archivos.filter(archivo =>
             archivo[filterKey].toLowerCase().includes(searchTerm)
         );
@@ -84,8 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
         displayArchivos(filteredArchivos);
     });
 
-    // Aplicar selección de sugerencia al campo de búsqueda
-    suggestionBox.addEventListener("click", (event) => {
+    suggestionBox.addEventListener("click", event => {
         if (event.target.tagName === "P") {
             searchInput.value = event.target.textContent;
             suggestionBox.style.display = "none";
@@ -97,23 +117,21 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => suggestionBox.style.display = "none", 200);
     });
 
-    // Vaciar el campo de búsqueda y ocultar la lista al cambiar el filtro
     filterSelect.addEventListener("change", () => {
         const selectedFilter = filterSelect.value;
 
         if (selectedFilter === "todos") {
-            searchInput.value = ""; // Vaciar el campo de búsqueda
-            searchInput.disabled = true; // Deshabilitar la búsqueda
-            suggestionBox.style.display = "none"; // Ocultar sugerencias
-            container.style.display = "flex"; // Mostrar todos los archivos
-            displayArchivos(archivos); // Mostrar toda la info
+            searchInput.value = "";
+            searchInput.disabled = true;
+            suggestionBox.style.display = "none";
+            container.style.display = "flex";
+            displayArchivos(archivos);
         } else {
-            searchInput.disabled = false; // Habilitar la búsqueda
-            searchInput.value = ""; // Vaciar la búsqueda al cambiar el filtro
-            container.style.display = "none"; // Ocultar la lista de archivos hasta que el usuario escriba
+            searchInput.disabled = false;
+            searchInput.value = "";
+            container.style.display = "none";
         }
     });
 
-    // Mostrar todos los archivos inicialmente (solo cuando haya búsqueda)
-    displayArchivos([]);
+    displayArchivos([]); // Inicial: vacío
 });
