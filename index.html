@@ -8,39 +8,54 @@
 
     <!-- AOS (Animate On Scroll) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Fuente opcional para mejor tipografía -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Navegación con logo centrado -->
     <nav>
-        <img src="img/logo.png" alt="Logo">
+        <img src="img/logo.png" alt="Logo Archivo Metal Paraguayo" class="logo">
     </nav>
 
-    <!-- Buscador con filtro y sugerencias -->
-    <header>
-        <input type="text" id="searchInput" placeholder="Buscar...">
-        <select id="filterSelect">
-            <option value="titulo">Álbum</option>
-            <option value="banda">Banda</option>
-            <option value="discografica">Discográfica</option>
-            <option value="genero">Género</option>
-            <option value="pais">País</option>
-            <option value="todos">Todos</option>
-        </select>
-        <div id="suggestionBox" class="suggestion-box"></div>
+    <!-- Buscador con filtro y sugerencias - Mejorado semánticamente -->
+    <header class="search-header">
+        <div class="search-container">
+            <input type="text" 
+                   id="searchInput" 
+                   placeholder="Buscar álbumes, bandas..." 
+                   aria-label="Buscar en el archivo"
+                   autocomplete="off">
+            
+            <select id="filterSelect" aria-label="Filtrar por categoría">
+                <option value="titulo">Álbum</option>
+                <option value="banda">Banda</option>
+                <option value="discografica">Discográfica</option>
+                <option value="genero">Género</option>
+                <option value="pais">País</option>
+                <option value="todos">Todos</option>
+            </select>
+            
+            <div id="suggestionBox" class="suggestion-box" aria-live="polite"></div>
+        </div>
     </header>
 
-    <!-- Contenedor de archivos -->
-    <div class="container">
-        <div id="archivos-list"></div>
-    </div>
+    <!-- Contenedor de archivos - Mejorado con ARIA -->
+    <main class="container" id="main-container" aria-live="polite">
+        <div id="archivos-list" class="archivos-grid"></div>
+    </main>
 
     <!-- Anime.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <!-- AOS.js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out-quad',
+            once: true
+        });
     </script>
 
     <!-- Tu script principal -->

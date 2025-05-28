@@ -21,32 +21,67 @@ document.addEventListener("DOMContentLoaded", () => {
             archivoDiv.setAttribute("data-aos-delay", `${index * 800}`);
 
             archivoDiv.innerHTML = `
-                <h1><strong>${archivo.titulo}</strong></h1>
-                <h2><strong>${archivo.banda}</strong></h2>
-                <img src="${archivo.portada}" alt="Portada" class="archivo-img" loading="lazy">
-                <p><strong>Género:</strong> <em>${archivo.genero}</em></p>
-                <p><strong>País:</strong> <em>${archivo.pais}</em></p>
-                <p><strong>Tipo:</strong> <em>${archivo.tipo}</em></p>
-                <p><strong>Formato:</strong> <em>${archivo.formato}</em></p>
-                <p><strong>Lanzamiento:</strong> <em>${archivo.lanzamiento}</em></p>
-                <p><strong>Discográfica:</strong> <em>${archivo.discografica}</em></p>
-                <p><strong>Miembros</strong></p>
-                <ul class="archivo-miembros">
-                    ${archivo.miembros.map(miembro => `<li><em>${miembro}</em></li>`).join("")}
-                </ul>
-                <p><strong>Lista de canciones:</strong></p>
-                <ul class="archivo-canciones">
-                    ${archivo.canciones.map(cancion => `<li><em>${cancion}</em></li>`).join("")}
-                </ul>
-                <p><strong>BandCamp</strong></p>
-                <ul class="archivo-redes">
-                    ${archivo.redes.length > 0 
-                        ? archivo.redes.map(red => red.platform === "N/A" || red.url === "N/A" 
-                            ? `<li><em>No disponible</em></li>` 
-                            : `<li><a href="${red.url}" target="_blank">${red.platform}</a></li>`)
-                        .join("")
-                        : `<li><em>No disponible</em></li>`}
-                </ul>
+                <div class="archivo-header">
+                    <h1>${archivo.titulo}</h1>
+                    <h2>${archivo.banda}</h2>
+                </div>
+                
+                <div class="archivo-content">
+                    <img src="${archivo.portada}" alt="Portada" class="archivo-img" loading="lazy">
+                    
+                    <div class="archivo-meta">
+                        <div class="meta-row">
+                            <span class="meta-label">Género:</span>
+                            <span class="meta-value">${archivo.genero}</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-label">País:</span>
+                            <span class="meta-value">${archivo.pais}</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-label">Tipo:</span>
+                            <span class="meta-value">${archivo.tipo}</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-label">Formato:</span>
+                            <span class="meta-value">${archivo.formato}</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-label">Lanzamiento:</span>
+                            <span class="meta-value">${archivo.lanzamiento}</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-label">Discográfica:</span>
+                            <span class="meta-value">${archivo.discografica}</span>
+                        </div>
+                    </div>
+                    
+                    <div class="archivo-section">
+                        <h3>Miembros</h3>
+                        <ul class="archivo-miembros">
+                            ${archivo.miembros.map(miembro => `<li>${miembro}</li>`).join("")}
+                        </ul>
+                    </div>
+                    
+                    <div class="archivo-section">
+                        <h3>Lista de canciones</h3>
+                        <ul class="archivo-canciones">
+                            ${archivo.canciones.map(cancion => `<li>${cancion}</li>`).join("")}
+                        </ul>
+                    </div>
+                    
+                    <div class="archivo-section">
+                        <h3>BandCamp</h3>
+                        <ul class="archivo-redes">
+                            ${archivo.redes.length > 0 
+                                ? archivo.redes.map(red => red.platform === "N/A" || red.url === "N/A" 
+                                    ? `<li><span class="no-disponible">No disponible</span></li>` 
+                                    : `<li><a href="${red.url}" target="_blank">${red.platform}</a></li>`)
+                                .join("")
+                                : `<li><span class="no-disponible">No disponible</span></li>`}
+                        </ul>
+                    </div>
+                </div>
             `;
 
             archivosList.appendChild(archivoDiv);
