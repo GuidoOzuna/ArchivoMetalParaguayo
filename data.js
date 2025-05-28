@@ -10,11 +10,11 @@ const archivos = [
         lanzamiento: "2018", // Formato YYYY-MM-DD
         discografica: "Black Fish Distro",
         miembros: [
-            "Juan Vera",
-            "Horacio Careaga",
-            "Richard Ariasx",
-            "David Cano",
-            "Javier Isasi"
+            "- Juan Vera",
+            "- Horacio Careaga",
+            "- Richard Ariasx",
+            "- David Cano",
+            "- Javier Isasi"
         ],
         canciones: [
             "01- Sendero al olvido",
@@ -36,11 +36,11 @@ const archivos = [
         lanzamiento: "2022", // Formato corregido
         discografica: "Independiente",
         miembros: [
-            "Mbyjausukañy",
-            "Desgarro",
-            "Mya Jahari",
-            "Pirco",
-            "Aida"
+            "- Mbyjausukañy",
+            "- Desgarro",
+            "- Mya Jahari",
+            "- Pirco",
+            "- Aida"
         ],
         canciones: [
             "01- Y",
@@ -68,11 +68,11 @@ const archivos = [
         lanzamiento: "2023", // Formato corregido
         discografica: "Magna Anathema Records",
         miembros: [
-            "Mbyjausukañy",
-            "Desgarro",
-            "Mya Jahari",
-            "Pirco",
-            "Aida"
+            "- Mbyjausukañy",
+            "- Desgarro",
+            "- Mya Jahari",
+            "- Pirco",
+            "- Aida"
         ],
         canciones: [
             "Lado A",
@@ -102,10 +102,10 @@ const archivos = [
         lanzamiento: "2011", // Formato corregido
         discografica: "Independiente",
         miembros: [
-            "Aña",
-            "Mark",
-            "Luison",
-            "W'i"
+            "- Aña",
+            "- Mark",
+            "- Luison",
+            "- W'i"
         ],
         canciones: [
             "01- Intro",
@@ -128,10 +128,10 @@ const archivos = [
         lanzamiento: "2015", // Formato corregido
         discografica: "Independiente",
         miembros: [
-            "Aña",
-            "Mefistoles",
-            "Luison",
-            "Sammael"
+            "- Aña",
+            "- Mefistoles",
+            "- Luison",
+            "- Sammael"
         ],
         canciones: [
             "01- Intro",
@@ -154,10 +154,10 @@ const archivos = [
         lanzamiento: "2015", // Formato corregido
         discografica: "Independiente",
         miembros: [
-            "Aña",
-            "Mefistoles",
-            "Luison",
-            "Sammael"
+            "- Aña",
+            "- Mefistoles",
+            "- Luison",
+            "- Sammael"
         ],
         canciones: [
             "01- Intro",
@@ -180,10 +180,10 @@ const archivos = [
         lanzamiento: "2019", // Formato corregido
         discografica: "Depressive Illusions Records",
         miembros: [
-            "Aña",
-            "Mefistoles",
-            "Luison",
-            "Sammael"
+            "- Aña",
+            "- Mefistoles",
+            "- Luison",
+            "- Sammael"
         ],
         canciones: [
             "01- Intro",
@@ -207,19 +207,19 @@ const archivos = [
         discografica: "Desecration of Souls Productions",
         miembros: [
             "Taú",
-            "Aña",
-            "Luison",
-            "Mefistofeles",
-            "Sammael",
+            "- Aña",
+            "- Luison",
+            "- Mefistofeles",
+            "- Sammael",
             "Bestial Devastator",
-            "Eviscerator",
-            "Infernal Aggressor",
-            "Heavy Destructor",
+            "- Eviscerator",
+            "- Infernal Aggressor",
+            "- Heavy Destructor",
             "Mortiferis",
-            "Bicho Torres",
-            "Hery Leite",
-            "Juan Sanchez",
-            "Leonardo Bernal"
+            "- Bicho Torres",
+            "- Hery Leite",
+            "- Juan Sanchez",
+            "- Leonardo Bernal"
         ],
         canciones: [
             "Bestial Devastator",
