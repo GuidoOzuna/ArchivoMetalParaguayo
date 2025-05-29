@@ -75,7 +75,9 @@ document.addEventListener("DOMContentLoaded", () => {
                         <ul class="archivo-redes">
                             ${archivo.redes.length > 0 
                                 ? archivo.redes.map(red => red.platform === "N/A" || red.url === "N/A" 
-                                    ? `<li><span class="no-disponible">No disponible</span></li>` 
+                                    ? `<li><span
+                                    class="no-disponible"><del>Bandcamp</del></span></li>`
+                                    
                                     : `<li><a href="${red.url}" target="_blank">${red.platform}</a></li>`)
                                 .join("")
                                 : `<li><span class="no-disponible">No disponible</span></li>`}
