@@ -10,11 +10,11 @@ const archivos = [
         lanzamiento: "2008",
         discografica: "Independiente",
         miembros: [
-            "Itto Rivas",
-            "Camilo Ramírez",
-            "Mario Garcia",
-            "Nacho Galeano",
-            "Carlos Carvallo"
+            "- Itto Rivas (Drums, Vocals)",
+            "- Camilo Ramírez (Guitars, Vocals)",
+            "- Mario Garcia (Vocals)",
+            "- Nacho Galeano (Bass)",
+            "- Carlos Carvallo (Guitars)"
         ],
         canciones: [
             "01- Rockero Impostor",
@@ -39,11 +39,11 @@ const archivos = [
         lanzamiento: "2008",
         discografica: "Independiente",
         miembros: [
-            "Itto Rivas",
-            "Camilo Ramírez",
-            "Mario Garcia",
-            "Nacho Galeano",
-            "Federico Vera"
+            "- Itto Rivas (Drums, Vocals)",
+            "- Camilo Ramírez (Guitars, Vocals)",
+            "- Mario Garcia (Vocals)",
+            "- Nacho Galeano (Bass)",
+            "- Federico Vera (Guitars)"
         ],
         canciones: [
             "01- Patea",
@@ -71,11 +71,11 @@ const archivos = [
         lanzamiento: "2009",
         discografica: "Independiente",
         miembros: [
-            "Itto Rivas",
-            "Camilo Ramírez",
-            "Mario Garcia",
-            "Nacho Galeano",
-            "Esteban Centurion"
+            "- Itto Rivas (Drums, Vocals)",
+            "- Camilo Ramírez (Guitars, Vocals)",
+            "- Mario Garcia (Vocals)",
+            "- Nacho Galeano (Bass)",
+            "- Esteban Centurion (Guitars)"
         ],
         canciones: [
             "01- Patea",
@@ -96,7 +96,7 @@ const archivos = [
             { platform: "Bandcamp", url: "N/A" }
           ]
     },
-            {
+        {
         titulo: "220 Voltios",
         portada: "img/220_voltios/220_voltios.jpg",
         banda: "220 Voltios",
@@ -107,11 +107,11 @@ const archivos = [
         lanzamiento: "2009",
         discografica: "Las Palmeras Records",
         miembros: [
-            "Itto Rivas",
-            "Camilo Ramírez",
-            "Mario Garcia",
-            "Nacho Galeano",
-            "Esteban Centurion"
+            "- Itto Rivas (Drums, Vocals)",
+            "- Camilo Ramírez (Guitars, Vocals)",
+            "- Mario Garcia (Vocals)",
+            "- Nacho Galeano (Bass)",
+            "- Esteban Centurion (Guitars)"
         ],
         canciones: [
             "01- Patea",
@@ -127,6 +127,259 @@ const archivos = [
             "11- La carretera del rock",
             "12- La espada sagrada (Riff cover) ",
             "13- Destrucción (V8 cover) (live)"
+        ],
+        redes: [
+            { platform: "Bandcamp", url: "N/A" }
+          ]
+    },
+        {
+        titulo: "Heavy Metal",
+        portada: "img/220_voltios/heavy_metal.jpg",
+        banda: "220 Voltios",
+        genero: "Heavy Metal",
+        pais: "Paraguay",
+        tipo: "Compilación",
+        formato: "Casete",
+        lanzamiento: "2011",
+        discografica: "Rostrum Metralla Productions",
+        miembros: [
+            "VV."
+        ],
+        canciones: [
+            "Side A",
+            "01-	Patea (Intro)",		 
+            "02- Heavy metal", 
+            "03- Nada me detendrá",
+            "04- Noche de rock y alcohol",
+            "05- AC/DC",
+            "06- Días de gloria",
+            "07- La espada sagrada (Riff cover)",
+            "Side B",
+            "08- Rockero impostor",
+            "09- Montado en la muerte",
+            "10- Riff, cueros y tachas",
+            "11- La carretera del rock",
+            "12- Made in Japan - 220 Voltios",
+            "13- Destrucción (V8 cover)"
+        ],
+        redes: [
+            { platform: "Bandcamp", url: "N/A" }
+          ]
+    },
+        {
+        titulo: "Pesadilla",
+        portada: "img/220_voltios/pesadilla.jpg",
+        banda: "220 Voltios",
+        genero: "Heavy Metal",
+        pais: "Paraguay",
+        tipo: "Ep",
+        formato: "Cd",
+        lanzamiento: "2014",
+        discografica: "Independiente",
+        miembros: [
+            "- Itto Rivas (Drums)",
+            "- Camilo Ramírez (Guitars)",
+            "- Mario Garcia (Vocals)",
+            "- Spinal (Bass)",
+            "- Esteban Centurion (Guitars)"
+        ],
+        canciones: [
+            "01- Mensajeros del Rock",		 
+            "02- Cuánto tiempo más", 
+            "03- Dr. Rock & Roll",
+            "04- Pesadilla",
+            "05- Posesion metalica"
+        ],
+        redes: [
+            { platform: "Bandcamp", url: "N/A" }
+          ]
+    },
+            {
+        titulo: "Abismal destrucción",
+        portada: "img/Abbadon/abismal_destruccion.jpg",
+        banda: "Abbadon",
+        genero: "Death/Thrash Metal",
+        pais: "Paraguay",
+        tipo: "Ep",
+        formato: "Cd",
+        lanzamiento: "2016",
+        discografica: "Independiente",
+        miembros: [
+            "- Rolo Sabatte (Bass)",
+            "- David Rojas (Drums)",
+            "- Richard Ortiz (Guitars)",
+            "- Jhatred Almada (Vocals)"
+        ],
+        canciones: [
+            "01- Viento astral (Intro)",		 
+            "02- Represión", 
+            "03- Proyecto nuevo orden",
+            "04- Narco guerrillas",
+            "05- Abismal destrucción"
+        ],
+        redes: [
+            { platform: "Bandcamp", url: "N/A" }
+          ]
+    },
+        {
+        titulo: "Sicario",
+        portada: "img/Abbadon/sicario.jpg",
+        banda: "Abbadon",
+        genero: "Death/Thrash Metal",
+        pais: "Paraguay",
+        tipo: "Demo",
+        formato: "Cd",
+        lanzamiento: "2017",
+        discografica: "Independiente",
+        miembros: [
+            "- Rolo Sabatte (Bass)",
+            "- David Rojas (Drums)",
+            "- Richard Ortiz (Guitars)",
+            "- Edgar Romero (Vocals)"
+        ],
+        canciones: [
+            "01- Fosa común",		 
+            "02- Sicario"
+        ],
+        redes: [
+            { platform: "Bandcamp", url: "N/A" }
+          ]
+    },
+            {
+        titulo: "Infected Souls",
+        portada: "img/Abomination/infected_souls.jpg",
+        banda: "Abomination",
+        genero: "Death Metal",
+        pais: "Paraguay",
+        tipo: "Demo",
+        formato: "Cd",
+        lanzamiento: "2007",
+        discografica: "Independiente",
+        miembros: [
+            "- David Rojas (Drums)",
+            "- Javier Rojas (Guitars)",
+            "- Andrés Godoy (Vocals)"
+        ],
+        canciones: [
+            "01- Darkness",		 
+            "02- The Final Revelation",
+            "03- Fucking Virus",
+            "04- Insane"
+        ],
+        redes: [
+            { platform: "Bandcamp", url: "N/A" }
+          ]
+    },
+          {
+        titulo: "To Torture and Murder",
+        portada: "img/Abomination/to_torture_and_murder.jpg",
+        banda: "Abomination",
+        genero: "Death Metal",
+        pais: "Paraguay",
+        tipo: "Demo",
+        formato: "Casete",
+        lanzamiento: "2017",
+        discografica: "Caco-Daemon Records",
+        miembros: [
+            "- David Rojas (Drums)",
+            "- Javier Rojas (Guitars)",
+            "- Andrés Godoy (Vocals)",
+            "- Isaac Benitez (Bass)"
+        ],
+        canciones: [
+            "01- Reduced to Pieces",		 
+            "02- The Meatgrinder",
+            "03- Cynical and Hostile",
+            "04- Insane"
+        ],
+        redes: [
+            { platform: "Bandcamp", url: "N/A" }
+          ]
+    },
+              {
+        titulo: "Brutal Legacy of Death",
+        portada: "img/Abomination/brutal_legacy_of_death.jpg",
+        banda: "Abomination",
+        genero: "Death Metal",
+        pais: "Paraguay",
+        tipo: "Álbum",
+        formato: "Cd",
+        lanzamiento: "2020",
+        discografica: "Black Fish Distro",
+        miembros: [
+            "- David Rojas (Drums)",
+            "- Javier Rojas (Guitars)",
+            "- Andrés Godoy (Vocals)",
+            "- Alex Medina (Bass)"
+        ],
+        canciones: [
+            "01- Abomination",		 
+            "02- Fucking Virus",
+            "03- Insane",
+            "04- The Meatgrinder",
+            "05- Infernal World",
+            "06- Lust in the Vatican",
+            "07- Cynical and Hostile",
+            "08- Sounds of the Abyss",
+            "09- The Final Revelation"
+        ],
+        redes: [
+            { platform: "Bandcamp", url: "N/A" }
+          ]
+    },
+        {
+        titulo: "Forbidden Magic",
+        portada: "img/Abracadabra/forbidden_magic.jpg",
+        banda: "Abracadabra",
+        genero: "Symphonic Metal",
+        pais: "Paraguay",
+        tipo: "Single",
+        formato: "Digital",
+        lanzamiento: "2015",
+        discografica: "Independiente",
+        miembros: [
+            "- Oliver Holzwarth (Bass)",
+            "- Alex Holzwarth (Drums)",
+            "- Aldo Benegas (Guitars)",
+            "- Diego Bogarín (Guitars)",
+            "- Adrian Benegas (Keyboards)",
+            "- Emilie Ragni (Vocals)"
+        ],
+        canciones: [
+            "01- Forbidden Magic",		 
+            "02- Luna",
+            "03- Coming Home"
+        ],
+        redes: [
+            { platform: "Bandcamp", url: "N/A" }
+          ]
+    },
+            {
+        titulo: "Samhain Midnight",
+        portada: "img/Abracadabra/samhain_midnight.jpg",
+        banda: "Abracadabra",
+        genero: "Symphonic Metal",
+        pais: "Paraguay",
+        tipo: "Ep",
+        formato: "Digital",
+        lanzamiento: "2016",
+        discografica: "Independiente",
+        miembros: [
+            "- Oliver Holzwarth (Bass)",
+            "- Alex Holzwarth (Drums)",
+            "- Aldo Benegas (Guitars)",
+            "- Diego Bogarín (Guitars)",
+            "- Adrian Benegas (Keyboards)",
+            "- Emilie Ragni (Vocals)"
+        ],
+        canciones: [
+            "01- Omnia Mors Aequat",		 
+            "02- Lord of Illusion",
+            "03- Once on a Samhain Night",
+            "04- Inferno",
+            "05- Fugue X",
+            "06- Trick or Treat",
+            "07- Forbidden Magic (Demo Version)"
         ],
         redes: [
             { platform: "Bandcamp", url: "N/A" }
