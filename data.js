@@ -354,7 +354,7 @@ const archivos = [
             { platform: "Bandcamp", url: "N/A" }
           ]
     },
-            {
+        {
         titulo: "Samhain Midnight",
         portada: "img/Abracadabra/samhain_midnight.jpg",
         banda: "Abracadabra",
@@ -380,6 +380,87 @@ const archivos = [
             "05- Fugue X",
             "06- Trick or Treat",
             "07- Forbidden Magic (Demo Version)"
+        ],
+        redes: [
+            { platform: "Bandcamp", url: "N/A" }
+          ]
+    },
+        {
+        titulo: "Demo Promocional 2008",
+        portada: "img/Abysmal_Path/demo_promocional_2008.jpg",
+        banda: "Abysmal Path",
+        genero: "Black/Death Metal",
+        pais: "Paraguay",
+        tipo: "Demo",
+        formato: "Cd",
+        lanzamiento: "2008",
+        discografica: "Independiente",
+        miembros: [
+            "- Max Pankow (Drums)",
+            "- Alejandro Edan (Guitars, Vocals)"
+        ],
+        canciones: [
+            "01- Maldición",		 
+            "02- Ofreciendo en Culto",
+            "03- Esquizofenia"
+        ],
+        redes: [
+            { platform: "Bandcamp", url: "N/A" }
+          ]
+    },
+        {
+        titulo: "Live at the Necro Blasphemy II",
+        portada: "img/Abysmal_Path/live_at_the_necro_blasphemy_II.jpg",
+        banda: "Abysmal Path",
+        genero: "Black/Death Metal",
+        pais: "Paraguay",
+        tipo: "Álbum en vivo",
+        formato: "Cd",
+        lanzamiento: "2010",
+        discografica: "Independiente",
+        miembros: [
+            "- Max Pankow (Drums)",
+            "- AE (Guitars, Vocals)",
+            "- Frimost (Bass)"
+        ],
+        canciones: [
+            "01- Ofreciendo en culto",		 
+            "02- Maldición",
+            "03- Sólo para sentir... Placer",
+            "04- Entre infiernos",
+            "05- Abysmal Path",
+            "06- Tragedia",
+            "07- Existencia",
+            "08- Esquizofrenia"
+        ],
+        redes: [
+            { platform: "Bandcamp", url: "N/A" }
+          ]
+    },
+            {
+        titulo: "Live at the Necro Blasphemy II",
+        portada: "img/Abysmal_Path/live_at_the_necro_blasphemy_II.jpg",
+        banda: "Abysmal Path",
+        genero: "Black/Death Metal",
+        pais: "Paraguay",
+        tipo: "Álbum en vivo",
+        formato: "Cd",
+        lanzamiento: "2010",
+        discografica: "Independiente",
+        miembros: [
+            "- Max Pankow (Drums)",
+            "- AE (Guitars, Vocals)",
+            "- Frimost (Bass)"
+        ],
+        canciones: [
+            "01- Ofreciendo en culto",		 
+            "02- Maldición",
+            "03- Sólo para sentir... Placer",
+            "04- Entre infiernos",
+            "05- Abysmal Path",
+            "06- Tragedia",
+            "07- Existencia",
+            "08- Esquizofrenia"
         ],
         redes: [
             { platform: "Bandcamp", url: "N/A" }

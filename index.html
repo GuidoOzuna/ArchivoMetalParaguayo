@@ -47,6 +47,16 @@
         <div id="archivos-list" class="archivos-grid"></div>
     </main>
 
+    <!-- Sección de comentarios de Facebook -->
+    <section class="comments-section">
+        <h3>Comentarios</h3>
+        <div class="fb-comments" 
+             data-href="https://guidoozuna.github.io/ArchivoMetalParaguayo/" 
+             data-width="100%" 
+             data-numposts="5">
+        </div>
+    </section>
+
     <!-- Anime.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <!-- AOS.js -->
@@ -59,8 +69,16 @@
         });
     </script>
 
+    <!-- SDK de Facebook para comentarios -->
+    <div id="fb-root"></div>
+    
+    <script async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v19.0">
+</script>
+
     <!-- Tu script principal -->
     <script type="module" src="script.js"></script>
+    
 
 </body>
 </html>
