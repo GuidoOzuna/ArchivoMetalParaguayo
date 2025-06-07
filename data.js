@@ -465,6 +465,122 @@ const archivos = [
         redes: [
             { platform: "Bandcamp", url: "N/A" }
           ]
+    },
+        {
+        titulo: "Demo 2002",
+        portada: "img/Acrux/demo_2002.jpg",
+        banda: "Acrux",
+        genero: "Power Metal",
+        pais: "Paraguay",
+        tipo: "Demo",
+        formato: "Cd",
+        lanzamiento: "2002",
+        discografica: "Independiente",
+        miembros: [
+            "- Manuel Jara Scribano (Bass, Vocals)",
+            "- Daniel Riveros (Drums)",
+            "- Andres Jara Scribano (Vocals, Guitars)"
+        ],
+        canciones: [
+            "01- No Hablare De Ti",		 
+            "02- Ellos"
+        ],
+        redes: [
+            { platform: "Bandcamp", url: "N/A" }
+          ]
+    },
+            {
+        titulo: "Nuestro alrededor",
+        portada: "img/no_cover.jpg",
+        banda: "Acrux",
+        genero: "Power Metal",
+        pais: "Paraguay",
+        tipo: "Ep",
+        formato: "Desconocido",
+        lanzamiento: "2004",
+        discografica: "Independiente",
+        miembros: [
+            "- Andres Jara Scribano (Vocals, Guitars)",
+            "- Manuel Jara Scribano (Bass, Vocals)",
+            "- Daniel Riveros (Drums)",
+            "- Juan Braez (Keyboards, Vocals)"
+        ],
+        canciones: [
+            "01- Nuestro Alrededor",		 
+            "02- La Nacion Sin Fronteras",
+            "03- No Hablare De Ti",
+            "04- 	En Busca De Paz",
+            "05- Ellos",
+            "06- Carcel Del Alma",
+            "07- Olvidados"
+        ],
+        redes: [
+            { platform: "Bandcamp", url: "N/A" }
+          ]
+    },
+          {
+        titulo: "La nación sin fronteras",
+        portada: "img/Acrux/la_nación_sin_fronteras.jpg",
+        banda: "Acrux",
+        genero: "Power Metal",
+        pais: "Paraguay",
+        tipo: "Compilación",
+        formato: "Desconocido",
+        lanzamiento: "2008",
+        discografica: "Independiente",
+        miembros: [
+            "- Andres Jara Scribano (Vocals, Guitars)",
+            "- Manuel Jara Scribano (Bass, Vocals)",
+            "- Daniel Riveros (Drums)",
+            "- Juan Braez (Keyboards, Vocals)"
+        ],
+        canciones: [
+            "01- Cárcel del alma (live in la viola)",
+            "02- Ellos (live in la viola)",
+            "03- Heading Out to the Highway (Judas Priest cover)(live in laviola)",
+            "04- Grinder (Judas Priest cover) (live in la viola)",
+            "05- Nuestro alrededor",
+            "06- La nación sin fronteras",
+            "07- No hablaré de ti",
+            "08- En busca de paz",
+            "09- Olvidados",
+            "10- Chispa de vida",
+            "11- Voy a ceder",
+            "12- Por llegar a ti",
+            "13- Vencer en la lid",
+            "14- Disidente furtivo",
+            "15- Regreso a mi tierra",
+            "16- Infecunda pasión"
+        ],
+        redes: [
+            { platform: "Bandcamp", url: "N/A" }
+          ]
+    },
+              {
+        titulo: "Lust Hate Noise",
+        portada: "img/Ad_Occultus/lust_hate_noise.jpg",
+        banda: "Ad Occultus",
+        genero: "Black Metal",
+        pais: "Paraguay",
+        tipo: "Ep",
+        formato: "Cd",
+        lanzamiento: "2016",
+        discografica: "Independiente",
+        miembros: [
+            "- Damiantichrist (Bass, Vocals)",
+            "- Arconte (Drums)",
+            "- Balsyr (Guitars)",
+            "- Murmur (Guitars)"
+        ],
+        canciones: [
+            "01- Infernal Speed Crush",
+            "02- Desire",
+            "03- Leviatan",
+            "04- Satanic Wrath"
+        ],
+        redes: [
+            { platform: "Bandcamp", url: "N/A" }
+          ]
     }
 ];
 
